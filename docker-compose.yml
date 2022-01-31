@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+ daastest:
+  container_name: daastest
+  build: .
+  ports:
+  - "8250:3000"
+ proptest-ws:
+  container_name: proptest-ws
+  build: propclas/.
+  expose:
+  - "8199"
